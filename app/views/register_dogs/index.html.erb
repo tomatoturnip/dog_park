@@ -1,0 +1,9 @@
+<h1>Dog Registrations</h1>
+
+<% if @register_dogs.present? %>
+  <ul>
+  <% @register_dogs.each do |register_dog| %>
+    <li><%= register_dog.full_name %></li>
+      <% end %>
+  </ul>
+  <% end %>

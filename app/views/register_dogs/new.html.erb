@@ -1,0 +1,12 @@
+<h1>Register a New Dog</h1>
+
+<%= simple_form_for(@register_dog) do |f| %>
+  <%= f.input :first_name, label: 'First Name' %>
+  <%= f.input :last_name, label: 'Last Name' %>
+  <%= f.input :email %>
+  <%= f.input :dog_name, label: 'Dog Name' %>
+  <%= f.button :submit, value: 'Register Dog' %>
+
+<% end %>
+
+
